@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+		<title>Juego del Ahorcado</title>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+	</head>
+
+	<body class="principal">
+
+		<main>
+            <div>
+                <img class ="logo" src="imagenes/logo.png">
+            </div>
+
+            <div>
+                <input id ="palabra" class="palabra" placeholder="Ingrese una palabra" type="text">
+            </div>
+
+            <canvas width="390" height="500" id="pizarra"></canvas>
+
+            <div class="btn-1">
+                <button id = "inicio" class="inicio">Iniciar Juego</button>
+                <button id="agregar" class="agregar">Agregar nueva palabra</button>
+            </div>
+
+            <div class="btn-2">
+                <p id="nota" class="nota">Máx. de 8 letras</p>
+                <button id ="guardar" class="guardar">Guardar y empezar</button>
+                <button id ="cancelar" class="cancelar" onclick="location.reload()">Cancelar</button>
+            </div>
+
+            <div class="tiempo">
+                <h1 id="reloj"><time>00:00</time></h1>
+                <img id="crono" src="imagenes/reloj.jpg">
+            </div>
+
+            <div class="lima">
+                <img id="milima" class="mean" src="imagenes/lima-1.1.jpg">
+            </div>
+
+            <div class="btn-3">
+                <button id="reiniciar" class="reiniciar">Nuevo Juego</button>
+                <button id="terminar" class="terminar" onclick="location.reload()">Desistir</button>
+            </div>
+
+            <select name="opciones" id="opciones" size="7">
+                <optgroup label="Selecciona tu tema y dale iniciar Juego">
+                   <option class="tema" value="capitales">Capitales</option>
+                   <option class="tema" value="mes">Meses</option>
+                   <option class="tema" value="simpsons">Los Simpson</option>
+                   <option class="tema" value="superhereos">Superhereos</option>
+                   <option class="tema" value="animes">Personajes de Animes</option>
+                   <option class="tema" value="escritores">Escritores</option>
+
+                </optgroup>
+              </select>
+			
+		</main>
+
+        <script src="ahorcado.js"></script>
+
+		<footer>
+            <img class="logo2" src="imagenes/logo-3.jpg">
+			by César Sánchez ✈...☼
+		</footer>
+
+        
+
+	</body>
+
+    
+</html>
